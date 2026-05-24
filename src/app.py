@@ -1,7 +1,5 @@
 from flask import Flask, jsonify
 
-SECRET_KEY = "super-secret-password-123"
-
 app = Flask(__name__)
 
 @app.route("/")
@@ -10,7 +8,6 @@ def home():
 
 @app.route("/health")
 def health():
-    password="123-admin"
     return jsonify({"status": "healthy"})
 
 if __name__ == "__main__":
