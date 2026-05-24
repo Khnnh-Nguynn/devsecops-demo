@@ -72,7 +72,8 @@ jobs:
         uses: zaproxy/action-baseline@v0.12.0
         with:
           target: "http://localhost:5000"
-          fail_action: false             # không block khi học
+          fail_action: false
+          allow_issue_writing: false             # không block khi học
 
   # ── QUALITY GATE ────────────────────────────────────
   quality-gate:
