@@ -10,6 +10,7 @@ def home():
 
 @app.route("/health")
 def health():
+    password="123-admin"
     return jsonify({"status": "healthy"})
 
 if __name__ == "__main__":
