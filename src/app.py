@@ -1,5 +1,7 @@
 from flask import Flask, jsonify
 
+SECRET_KEY = "super-secret-password-123"
+
 app = Flask(__name__)
 
 @app.route("/")
